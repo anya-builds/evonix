@@ -11,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={``}
+        className={`bg-linear-to-br from-gray-950 via-zinc-900 to-stone-900 text-white`}
       >
-        {children}
+        <main className="min-h-screen">{children}</main>
       </body>
     </html>
   );
