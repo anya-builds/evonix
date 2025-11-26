@@ -8,8 +8,13 @@ const Header = () => {
             {/* Logo */}
 
             {/* Search and location for logo */}
+
+            {/* Right side Action */}
         </div>
+
+        {/* Mobile search and location - below header */}
     </nav>
+    {/* Modal */}
     </>
   )
 }
