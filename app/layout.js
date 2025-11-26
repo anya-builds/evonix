@@ -2,6 +2,7 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Header from "@/components/header";
+import { ConvexClientProvider } from "./ConvexClientProvider";
 
 
 export const metadata = {
@@ -15,7 +16,14 @@ export default function RootLayout({ children }) {
       <body
         className={`bg-linear-to-br from-gray-950 via-zinc-900 to-stone-900 text-white`}
       >
-        <ThemeProvider>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {/* <ConvexClientProvider */}
+            <ConvexClientProvider>
           <Header/>
         <main className="relative min-h-screen container mx-auto pt-40 md:pt-32">
           {/* glow */}
@@ -29,6 +37,7 @@ export default function RootLayout({ children }) {
             <div className="text-sm text-gray-400">Madw with ❤️ by AnkitaArya</div>
           </footer>
         </main>
+        </ConvexClientProvider>
         </ThemeProvider>
       </body>
     </html>
