@@ -1,3 +1,4 @@
+
 export default {
   providers: [
     {
@@ -5,4 +6,4 @@ export default {
       applicationID: "convex",
     },
   ],
-};
+} ;
