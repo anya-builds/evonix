@@ -1,9 +1,11 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import Link from "next/link";
 import { SignInButton, useAuth,SignUpButton, UserButton,SignedOut,SignedIn, useUser } from "@clerk/nextjs";
 import { User } from 'lucide-react';
 import { Button } from './ui/button';
+import { Authenticated, Unauthenticated } from "convex/react";
 const Header = () => {
   return (
     <>
@@ -26,15 +28,15 @@ const Header = () => {
             {/* Right side Action */}
           
           <div className="flex items-center">
-            <SignedIn>
+            <Authenticated>
               {/* Create Event */}
               <UserButton/>
-              </SignedIn>
-              <SignedOut>
+             </Authenticated>
+              <Unauthenticated>
                 <SignInButton mode="modal">
                   <Button size="sm">Sign In</Button>
                 </SignInButton>
-              </SignedOut>
+              </Unauthenticated>
              
     
           </div>
