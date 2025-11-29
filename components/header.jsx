@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from "next/link";
+import {BarLoader} from "react-spinners"
 import { SignInButton,UserButton } from "@clerk/nextjs";
 import { User } from 'lucide-react';
 import { Button } from './ui/button';
@@ -44,6 +45,15 @@ const Header = () => {
         </div>
 
         {/* Mobile search and location - below header */}
+
+        {/* Loading */}
+        
+         
+          <div className="absolute bottom-0 left-0 w-full">
+            <BarLoader width={"100%"} color="#a855f7" />
+          </div>
+        
+        
     </nav>
     {/* Modal */}
     </>
