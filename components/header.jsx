@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from "next/link";
-import { SignInButton, useAuth,SignUpButton, UserButton,SignedOut,SignedIn, useUser } from "@clerk/nextjs";
+import { SignInButton,UserButton } from "@clerk/nextjs";
 import { User } from 'lucide-react';
 import { Button } from './ui/button';
 import { Authenticated, Unauthenticated } from "convex/react";
