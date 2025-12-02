@@ -8,6 +8,7 @@
  * @module
  */
 
+import type * as dashboard from "../dashboard.js";
 import type * as events from "../events.js";
 import type * as explore from "../explore.js";
 import type * as search from "../search.js";
@@ -21,6 +22,7 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  dashboard: typeof dashboard;
   events: typeof events;
   explore: typeof explore;
   search: typeof search;
