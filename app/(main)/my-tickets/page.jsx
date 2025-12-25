@@ -19,7 +19,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Link from "next/link";
-import EventCard from "@/components/event-card";
+import EventCard from "@/components/event-card.jsx";
 
 export default function MyTicketsPage() {
   const router = useRouter();
