@@ -8,11 +8,11 @@ import { Authenticated, Unauthenticated } from "convex/react";
 import { BarLoader } from "react-spinners";
 import { useStoreUser } from "@/hooks/use-store-user";
 import { useOnboarding } from "@/hooks/use-onboarding";
-import OnboardingModal from "./onboarding-modal.jsx";
-import SearchLocationBar from "./search-location-bar.jsx";
+import OnboardingModal from "./onboarding-modal";
+import SearchLocationBar from "./search-location-bar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import UpgradeModal from "./upgrade-modal.jsx";
+import UpgradeModal from "./upgrade-modal";
 import { Badge } from "./ui/badge";
 
 export default function Header() {

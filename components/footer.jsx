@@ -10,18 +10,18 @@ const Footer = () => {
 
       <div className="flex gap-4 items-center">
         <a
-          href=""
+          href="https://www.youtube.com/roadsidecoder"
           className="text-gray-400"
         >
           <Youtube />
         </a>
         <a
-          href="https://www.instagram.com/ankita_arya._/"
+          href="https://www.instagram.com/roadsidecoder"
           className="text-gray-400"
         >
           <Instagram className="w-5 h-5" />
         </a>
-        <a href="https://x.com/inklinggankitaa" className="text-gray-400">
+        <a href="https://x.com/Piyush_eon" className="text-gray-400">
           <Twitter className="w-5 h-5" />
         </a>
       </div>

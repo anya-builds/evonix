@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 export default function UnsplashImagePicker({ isOpen, onClose, onSelect }) {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("event");
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
 

@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/carousel";
 import { CATEGORIES } from "@/lib/data";
 import Autoplay from "embla-carousel-autoplay";
-import EventCard from "@/components/event-card.jsx";
+import EventCard from "@/components/event-card";
 
 export default function ExplorePage() {
   const router = useRouter();
